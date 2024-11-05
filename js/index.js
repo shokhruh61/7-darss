@@ -85,10 +85,10 @@
 
 function displayUserData() {
   // Foydalanuvchi kiritgan qiymatlarni olish
-  const name = document.getElementById('name').value;
-  const surname = document.getElementById('surname').value;
-  const birthdate = document.getElementById('birthdate').value;
-  const photoUrl = document.getElementById('photo').value;
+  const name = document.querySelector('#name').value;
+  const surname = document.querySelector('#surname').value;
+  const birthdate = document.querySelector('#birthdate').value;
+  const photoUrl = document.querySelector('#photo').value;
 
   // Foydalanuvchi kiritgan ma'lumotlarni chiqarish uchun yangi HTML yaratish
   const userDataDiv = document.getElementById('userData');
@@ -102,7 +102,4 @@ function displayUserData() {
     <img src="${photoUrl}" alt="Foydalanuvchi rasmi" class="img-fluid rounded mb-3" style="max-width: 200px; height: auto;">
   </div>
   `;
-
-  // Input maydonlarini tozalash
-  document.getElementById('userForm').reset();
 }
